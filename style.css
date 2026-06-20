@@ -1,0 +1,134 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fffafc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #ffb6c1;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 5px solid #ff69b4;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff69b4;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #ff85c1;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+section h2 {
+    color: #ff69b4;
+    margin-bottom: 1rem;
+}
+
+/* Gallery */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery-container img {
+    width: 250px;   /* fixed width */
+    height: 200px;  /* fixed height */
+    object-fit: cover; /* ensures the image scales/crops nicely */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Fun Facts */
+ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+ul li {
+    background: #ffe4e1;
+    margin: 0.5rem auto;
+    padding: 0.8rem;
+    border-radius: 10px;
+    width: 80%;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 0.8rem;
+    border: 2px solid #ffb6c1;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ff85c1;
+}
+
+/* Footer */
+footer {
+    background-color: #ffb6c1;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
